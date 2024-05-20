@@ -26,3 +26,26 @@ This backend coding allows me to create a database and test whether the informat
 
 ##  VIDEO LINKS
 
+### Get Requests Link
+
+The following hyperlink presents a YouTube video that shows the different GET requests made through Insomnia. The order of the GET requests are as such
+
+* GET all categories using "/api/categories"
+* GET all tags using "/api/tags"
+* GET all products using "/api/products"
+* GET product ID 1 using "/api/products/1"
+* GET category ID 3 using "/api/categories/3"
+* GET tag ID 2 using "/api/tags/2"
+
+[GET Requests ](https://youtu.be/94X5cf_1Oos)
+
+### POST, PUT, and DELETE Requests Link
+
+The following hyperlink presents a YouTube video that shows a POST request into categories creating a new category, a PUT request to update the category that was newly made, and a DELETE request to destroy the newly made category
+
+* POST will make a category called "Undergarments" by using "/api/categories/"
+* PUT will update the newly made category to "Underwear" by accessing it id number through "/api/categories/7"
+* DELETE will destroy the "Underwear" category by using "/api/categories/7"
+
+[POST, PUT, DELETE Requests](https://youtu.be/ACJutjkb5DU)
+
