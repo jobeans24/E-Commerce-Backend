@@ -24,4 +24,5 @@ So that my company can compete with other e-commerce companies
 
 This backend coding allows me to create a database and test whether the information that is embedded within the code can be obtained, created, updated, or deleted. It allows me as the user to see all information with the database in JSON format and allow me to make and additions or changes that are needed as my staff and possibly company changes.
 
-## 
+##  VIDEO LINKS
+
