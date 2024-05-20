@@ -1,22 +1,22 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require('sequelize'); // Import the sequelize library
+const sequelize = require('../config/connection'); // Import the connection to the database
 
-class Product extends Model {}
+class Product extends Model {} // Create the Product class that extends the Model class
 
-Product.init(
+Product.init( // Initialize the Product model
     {
-        product_name: {
-            type: DataTypes.STRING,
-            allowNull: false,
+        product_name: { // Define the product_name column
+            type: DataTypes.STRING, // Set the data type to STRING
+            allowNull: false, // Do not allow null values
         },
-        price: {
-            type: DataTypes.DECIMAL,
-            allowNull: false,
-            validate: {
-                isDecimal: true,
+        price: { // Define the price column
+            type: DataTypes.DECIMAL, // Set the data type to DECIMAL
+            allowNull: false, // Do not allow null values
+            validate: { // Set the validation rules for the price column
+                isDecimal: true, // The price must be a decimal value
             },
         },
-        stock: {
+        stock: { // Define the stock column
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: 10,
@@ -24,7 +24,7 @@ Product.init(
                 isNumeric: true,
             },
         },
-        category_id: {
+        category_id: { // Define the category_id column
             type: DataTypes.INTEGER,
             references: {
                 model: 'category',
@@ -33,7 +33,7 @@ Product.init(
         },
     },
     {
-        sequelize,
+        sequelize, // Pass in the imported sequelize connection
         timestamps: false,
         freezeTableName: true,
         underscored: true,
@@ -41,4 +41,4 @@ Product.init(
     }
 );
 
-module.exports = Product;
+module.exports = Product; // Export the Product model
