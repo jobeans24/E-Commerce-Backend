@@ -1,6 +1,6 @@
-const { Tag } = require('../models');
+const { Tag } = require('../models'); // Import the Tag model
 
-const tagData = [
+const tagData = [ // Create an array of tag data
     {
         tag_name: 'rock music',
     },
@@ -27,6 +27,6 @@ const tagData = [
     },
 ];
 
-const seedTags = () => Tag.bulkCreate(tagData);
+const seedTags = () => Tag.bulkCreate(tagData); // Create a function named seedTags that bulk creates data using the array of data
 
-module.exports = seedTags;
+module.exports = seedTags; // Export the seedTags function

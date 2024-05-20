@@ -1,8 +1,8 @@
-const { Product } = require('../models');
+const { Product } = require('../models'); // Import the Product model
 
-const productData = [
+const productData = [ // Create an array of product data
     {
-        product_name: 'Plain T-Shirt',
+        product_name: 'Plain T-Shirt', // Define the product_name column
         price: 14.99,
         stock: 14,
         category_id: 1,
@@ -33,6 +33,6 @@ const productData = [
     },
 ];
 
-const seedProducts = () => Product.bulkCreate(productData);
+const seedProducts = () => Product.bulkCreate(productData); // Create a function named seedProducts that bulk creates data using the array of data
 
-module.exports = seedProducts;
+module.exports = seedProducts; // Export the seedProducts function
